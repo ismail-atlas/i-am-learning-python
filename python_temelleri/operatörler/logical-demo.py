@@ -43,4 +43,31 @@ print("z en büyük sayıdır: ", sonuc)
 """
 
 # 5
+"""
+vize1 = float(input("vize 1: "))
+vize2 = float(input("vize 2: "))
+final = float(input("final: "))
 
+ortalama = (((vize1 +vize2) / 2) * 0.6) + (final * 0.6)
+# sonuc = (ortalama >= 50) and (final >= 50) 
+sonuc = (ortalama >= 50) or (final >= 70)
+print(f"öğrencinin not ortalaması: {ortalama} ve geçme durumu: {sonuc}")
+"""
+
+# 6
+
+ad = input("adınız: ")
+kg = float(input("kilonuz: "))
+hg = float(input("boyunuz: "))
+ 
+kiloIndeks = kg / (hg ** 2)
+
+zayif = (kiloIndeks >= 0) and (kiloIndeks <= 18.4)
+normal = (kiloIndeks >= 18.5) and (kiloIndeks <= 24.9)
+kilolu = (kiloIndeks >= 25.0) and (kiloIndeks <= 29.9)
+obez = (kiloIndeks >= 30.0) and (kiloIndeks <= 34.9)
+
+print(f"{ad} kilo indeksin: {kiloIndeks} ve kilo değerlendirmen zayıf: {zayif}")
+print(f"{ad} kilo indeksin: {kiloIndeks} ve kilo değerlendirmen normal: {normal}")
+print(f"{ad} kilo indeksin: {kiloIndeks} ve kilo değerlendirmen kilolu: {kilolu}")
+print(f"{ad} kilo indeksin: {kiloIndeks} ve kilo değerlendirmen obez: {obez}")
